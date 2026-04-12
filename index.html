@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
-<style
+<style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -729,7 +729,7 @@ footer {
   section { padding: 5rem 1.5rem; }
   .hero { padding: 7rem 1.5rem 3rem; }
   .hero-grid { flex-direction: column; gap: 2rem; }
-  .hero-gorilla { display: block; width: 160vw; right: -50%; top: 60%; opacity: 0.18; filter: blur(4px) saturate(1.6) drop-shadow(0 0 80px rgba(0,191,255,0.15)) drop-shadow(0 0 140px rgba(233,30,99,0.1)); }
+  .hero-gorilla { display: block; position: absolute; left: 50%; right: auto; bottom: 12%; top: auto; transform: translateX(-40%); width: 90vw; height: auto; opacity: 0.3; z-index: 2; filter: blur(1.5px) saturate(1.8) drop-shadow(0 0 60px rgba(0,191,255,0.25)) drop-shadow(0 0 120px rgba(233,30,99,0.15)); mix-blend-mode: lighten; pointer-events: none; }
   .hero-bottom { position: relative; bottom: auto; margin-top: 3rem; flex-direction: column; gap: 2rem; align-items: flex-start; }
   .hero-tagline { font-size: 0.85rem; flex-wrap: wrap; }
   .scroll-indicator { display: none; }
