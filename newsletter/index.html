@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Bernard Brief - Issue #001</title>
+  <!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+  <style>
+    /* RESET */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #060e1a; }
+
+    /* GOOGLE FONTS IMPORT */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+    /* TEMPLATE STYLES */
+    .email-body { background-color: #060e1a; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #0A1628; }
+
+    /* TYPOGRAPHY */
+    .font-serif { font-family: 'Old Standard TT', 'Georgia', 'Times New Roman', serif; }
+    .font-sans { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; }
+    .font-work { font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+    /* OMBRE TEXT EFFECT */
+    .ombre-text {
+      background: linear-gradient(135deg, #F5F0E8 0%, #C8592E 35%, #E91E63 60%, #00BFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ombre-line {
+      height: 3px;
+      background: rgba(245, 240, 232, 0.15);
+      border: none;
+      margin: 0;
+    }
+
+    .ombre-line-thin {
+      height: 1px;
+      background: rgba(245, 240, 232, 0.15);
+      border: none;
+      margin: 0;
+    }
+
+    /* SECTION STYLES */
+    .section-label {
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C8592E;
+    }
+
+    .section-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: #C8592E;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .body-text {
+      font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245, 240, 232, 0.8);
+    }
+
+    .headline {
+      font-family: 'Old Standard TT', 'Georgia', serif;
+      color: #F5F0E8;
+      font-weight: 400;
+    }
+
+    /* BUTTON */
+    .cta-button {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid rgba(245, 240, 232, 0.3);
+      color: #F5F0E8 !important;
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      border-color: #C8592E;
+      color: #C8592E !important;
+    }
+
+    /* FEATURED ARTIST CARD */
+    .artist-card {
+      background: linear-gradient(135deg, #1B2A4A 0%, #0A1628 100%);
+      border: 1px solid rgba(245, 240, 232, 0.08);
+      border-radius: 2px;
+    }
+
+    /* QUOTE BLOCK */
+    .pull-quote {
+      border-left: 3px solid #C8592E;
+      padding-left: 24px;
+      font-family: 'Old Standard TT', 'Georgia', serif;
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.5;
+      color: rgba(245, 240, 232, 0.7);
+    }
+
+    /* FOOTER LINKS */
+    .footer-link {
+      color: rgba(245, 240, 232, 0.4) !important;
+      text-decoration: none;
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+    .footer-link:hover { color: #C8592E !important; }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 680px) {
+      .email-container { width: 100% !important; }
+      .fluid { max-width: 100% !important; height: auto !important; }
+      .stack-column { display: block !important; width: 100% !important; }
+      .mobile-padding { padding-left: 24px !important; padding-right: 24px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background: linear-gradient(180deg, #0A1628 0%, #1B2A4A 15%, #2E1A3A 30%, #4A1A2E 45%, #C8592E 65%, #E91E63 80%, #00BFFF 100%);">
+  <!-- PREVIEW TEXT -->
+  <div style="display:none;font-size:1px;color:#0A1628;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    This week: The real math behind gallery commissions that nobody wants to discuss. Plus outsider legend Mark Fleuridor and fresh studio news.
+  </div>
+
+  <!-- EMAIL WRAPPER -->
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(180deg, #0A1628 0%, #1B2A4A 15%, #2E1A3A 30%, #4A1A2E 45%, #C8592E 65%, #E91E63 80%, #00BFFF 100%);">
+    <tr>
+      <td align="center" style="padding: 20px 10px;">
+
+        <!-- EMAIL CONTAINER -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="640" class="email-container" style="background-color: rgba(10, 22, 40, 0.85);">
+
+          <!-- ============================================ -->
+          <!-- HEADER / MASTHEAD -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0;">
+              <!-- OMBRE TOP LINE -->
+              <div class="ombre-line"></div>
+
+              <!-- HEADER CONTENT -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="padding: 40px 48px 0 48px;" class="mobile-padding">
+                    <!-- TOP BAR: ISSUE & DATE -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td>
+                          <span class="section-label" style="color: rgba(245,240,232,0.4);">ISSUE #001</span>
+                        </td>
+                        <td align="right">
+                          <span class="section-label" style="color: rgba(245,240,232,0.4);"><!-- WEEK_DATE -->APRIL 14, 2026<!-- /WEEK_DATE --></span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 40px 48px 4px 48px;" class="mobile-padding">
+                    <!-- LOGO TEXT -->
+                    <div style="font-family: 'Old Standard TT', Georgia, serif; font-size: 14px; font-weight: 400; letter-spacing: 6px; text-transform: uppercase; color: rgba(245,240,232,0.5); margin-bottom: 16px;">BERNARD STUDIA</div>
+
+                    <!-- NEWSLETTER TITLE -->
+                    <h1 style="margin: 0; font-family: 'Old Standard TT', Georgia, serif; font-size: 52px; font-weight: 400; line-height: 1.05; letter-spacing: -1px;">
+                      <span style="color: #F5F0E8;">THE BERNARD<br>BRIEF</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 0 48px 0 48px;" class="mobile-padding">
+                    <!-- TAGLINE -->
+                    <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,240,232,0.4);">
+                      CREATE &nbsp;/&nbsp; CURATE &nbsp;/&nbsp; CONNECT
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- GORILLA LOGO -->
+                <tr>
+                  <td align="center" style="padding: 0 48px 0 48px;" class="mobile-padding">
+                    <!-- LOGO_IMAGE: Update src to your hosted image URL -->
+                    <img src="gorilla-logo-transparent.png" alt="Bernard Studia Gorilla" width="360" height="360" style="display: block; margin: 0 auto; border: 0;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION 1: HOT TAKE -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">HOT TAKE</span>
+              </div>
+
+              <!-- HEADLINE -->
+              <h2 class="headline" style="font-size: 32px; line-height: 1.2; margin: 0 0 20px 0;">
+                <!-- HOT_TAKE_TITLE -->Collectors Don't Buy Art. They Buy Stories About Themselves.<!-- /HOT_TAKE_TITLE -->
+              </h2>
+
+              <!-- BODY -->
+              <p class="body-text" style="margin: 0 0 20px 0;">
+                <!-- HOT_TAKE_BODY -->Picture this. Opening night. Chelsea. A man walks in wearing a jacket that costs more than the artist's rent. He does a lap. Doesn't read a single placard. Stops in front of the biggest piece - not because it moved him, but because it's the biggest piece. Pulls out his phone. Not to photograph the painting. To photograph himself next to it. Turns to the gallerist and says, "What's the damage?" Buys it in under a minute. Sixty grand. His only question: will it fit above the credenza in the Aspen house. He's gone before the artist even knows the red dot went up. That's not collecting. That's interior decorating with a tax strategy.<br><br>Here's how it actually works. Most serious collectors aren't buying art. They're buying a story they get to tell at dinner. "We picked this up at Basel." "She's about to have a show at the Hammer." "We got in early." The painting is a prop in someone else's narrative. And the artists know it. They smile at the openings and shake the right hands and go home and stare at the ceiling wondering if any of it was about the work.<br><br>The really ugly part is the flip. A collector buys a piece from an emerging artist for $8K, the artist's market heats up, and that same collector dumps it at auction for $40K two years later. The artist sees none of that money. Zero. They might not even know it happened until someone texts them a screenshot of the lot. The collector made five times their investment. The artist is still paying the same studio rent. And somehow we call this "supporting the arts."<br><br>There are real collectors out there. People who live with the work, who build relationships with artists that last decades, who wouldn't dream of flipping a piece like a stock. They exist. But the market isn't built for them. It's built for the credenza guy. And until artists start understanding that distinction, they'll keep getting played by people who see them as an asset class with better dinner party stories.<!-- /HOT_TAKE_BODY -->
+              </p>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION 2: FEATURED ARTIST -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">FEATURED ARTIST</span>
+              </div>
+
+              <!-- ARTIST CARD -->
+              <div class="artist-card" style="padding: 32px; margin-bottom: 24px;">
+                <!-- Artist Image Placeholder -->
+                <div style="width: 100%; margin-bottom: 24px;">
+                  <img src="fleuridor-work.jpg" alt="Mark Fleuridor - Quilted artwork featuring a figure with cosmic flower motifs" style="width: 100%; height: auto; display: block;">
+                </div>
+
+                <!-- Artist Name -->
+                <h3 class="headline" style="font-size: 26px; margin: 0 0 4px 0;">
+                  <!-- ARTIST_NAME -->Mark Fleuridor<!-- /ARTIST_NAME -->
+                </h3>
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #C8592E; margin-bottom: 16px;">
+                  <!-- ARTIST_MEDIUM -->Painter &bull; Quilter &bull; Miami<!-- /ARTIST_MEDIUM -->
+                </div>
+
+                <!-- Artist Description -->
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  Mark Fleuridor makes quilts that feel like a dream you had about someone you love. The kind where they're standing right there - in the living room, in the church pew, in the kitchen doorway - and you can feel them so completely it aches. But their face is a flower. And the closer you look, the further away it gets.
+                </p>
+
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  Warm and familiar and just beyond your fingertips. Haitian family photographs stitched into fabric, figures pulled from real life and given something more than realism could ever offer. The quilts carry the weight of memory but they float. They hum. They feel like Sunday morning in a house that doesn't exist anymore but somehow still smells like coffee and ironing.
+                </p>
+
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  Fleuridor is Haitian-American, born and raised in Miami. Knight Foundation Champion. Presidential Scholar in the Arts at 17. Solo show at YoungArts co-curated by Derrick Adams. Nine residencies. Shown at Sperone Westwater, Untitled Art Fair, Prizm. The work is available and it's not going to stay quiet for long.
+                </p>
+
+                <!-- Pull Quote -->
+                <div class="pull-quote" style="margin-bottom: 20px;">
+                  <!-- ARTIST_QUOTE -->"If Fleuridor's work speaks to you, we can make an introduction. office@bernardstudia.com."<!-- /ARTIST_QUOTE -->
+                </div>
+
+                <!-- CTA -->
+                <a href="#" class="cta-button">
+                  <!-- ARTIST_CTA -->GET IN TOUCH<!-- /ARTIST_CTA -->
+                </a>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION 3: STUDIO NEWS -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 48px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">STUDIO NEWS</span>
+              </div>
+
+              <!-- NEWS ITEM -->
+              <div>
+                <h3 class="headline" style="font-size: 22px; margin: 0 0 12px 0;">
+                  <!-- NEWS_1_TITLE -->Why This Exists<!-- /NEWS_1_TITLE -->
+                </h3>
+                <p class="body-text" style="margin: 0; font-size: 14px;">
+                  <!-- NEWS_1_BODY -->We got tired. That's the honest answer. Tired of watching good artists disappear because they didn't know the right people or couldn't stomach the schmoozing. Tired of an industry that runs on access and pretends it runs on merit. So we built Bernard Studia. Artist representation, digital marketing, web design, paid media, art production - the whole machine, pointed at the work instead of away from it.<br><br>This newsletter is the same idea in a different shape. No sponsors. No algorithms. No one telling us what we can and can't say about the industry that pays our rent. Just one conversation a week. Show up or don't. We'll be here either way.<!-- /NEWS_1_BODY -->
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- CLOSING / CTA -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 48px 48px 48px;" class="mobile-padding">
+              <p class="body-text" style="text-align: center; margin: 0 0 24px 0; font-size: 14px;">
+                You know somebody we should know about? Got a take that'll make us angry?<br>
+                Good. Write us. This thing's a conversation, not a monologue.
+              </p>
+              <a href="mailto:office@bernardstudia.com" class="cta-button">GET IN TOUCH</a>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- FOOTER -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0;">
+              <div class="ombre-line"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px 48px; background-color: rgba(0,0,0,0.3);" class="mobile-padding">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td>
+                    <div style="font-family: 'Old Standard TT', Georgia, serif; font-size: 13px; font-weight: 400; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,240,232,0.3); margin-bottom: 16px;">BERNARD STUDIA</div>
+                    <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: rgba(245,240,232,0.25); line-height: 1.8;">
+                      CREATE &nbsp;&bull;&nbsp; CURATE &nbsp;&bull;&nbsp; CONNECT
+                    </div>
+                  </td>
+                  <td align="right" valign="top">
+                    <!-- SERVICE LINKS -->
+                    <div style="margin-bottom: 8px;">
+                      <a href="https://bernardstudia.com" class="footer-link">WEBSITE</a>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                      <a href="mailto:office@bernardstudia.com" class="footer-link">EMAIL</a>
+                    </div>
+                    <div>
+                      <a href="#" class="footer-link">UNSUBSCRIBE</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- BOTTOM MARQUEE-STYLE SERVICE LIST -->
+              <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(245,240,232,0.06);">
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(245,240,232,0.15); text-align: center; line-height: 2;">
+                  ARTIST REPRESENTATION &nbsp;&bull;&nbsp; DIGITAL MARKETING &nbsp;&bull;&nbsp; WEB DESIGN &nbsp;&bull;&nbsp; PAID MEDIA &nbsp;&bull;&nbsp; ART PRODUCTION
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /EMAIL CONTAINER -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /EMAIL WRAPPER -->
+</body>
+</html>
