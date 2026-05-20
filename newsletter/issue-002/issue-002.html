@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Bernard Brief - Issue #002</title>
+  <!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+  <style>
+    /* RESET */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #060e1a; }
+
+    /* GOOGLE FONTS IMPORT */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+    /* TEMPLATE STYLES */
+    .email-body { background-color: #060e1a; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #0A1628; }
+
+    /* TYPOGRAPHY */
+    .font-serif { font-family: 'Old Standard TT', 'Georgia', 'Times New Roman', serif; }
+    .font-sans { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; }
+    .font-work { font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+    /* OMBRE TEXT EFFECT */
+    .ombre-text {
+      background: linear-gradient(135deg, #F5F0E8 0%, #C8592E 35%, #E91E63 60%, #00BFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ombre-line {
+      height: 3px;
+      background: rgba(245, 240, 232, 0.15);
+      border: none;
+      margin: 0;
+    }
+
+    .ombre-line-thin {
+      height: 1px;
+      background: rgba(245, 240, 232, 0.15);
+      border: none;
+      margin: 0;
+    }
+
+    /* SECTION STYLES */
+    .section-label {
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C8592E;
+    }
+
+    .section-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: #C8592E;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .body-text {
+      font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245, 240, 232, 0.8);
+    }
+
+    .headline {
+      font-family: 'Old Standard TT', 'Georgia', serif;
+      color: #F5F0E8;
+      font-weight: 400;
+    }
+
+    /* BUTTON */
+    .cta-button {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid rgba(245, 240, 232, 0.3);
+      color: #F5F0E8 !important;
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      border-color: #C8592E;
+      color: #C8592E !important;
+    }
+
+    /* FEATURED ARTIST CARD */
+    .artist-card {
+      background: linear-gradient(135deg, #1B2A4A 0%, #0A1628 100%);
+      border: 1px solid rgba(245, 240, 232, 0.08);
+      border-radius: 2px;
+    }
+
+    /* QUOTE BLOCK */
+    .pull-quote {
+      border-left: 3px solid #C8592E;
+      padding-left: 24px;
+      font-family: 'Old Standard TT', 'Georgia', serif;
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.5;
+      color: rgba(245, 240, 232, 0.7);
+    }
+
+    /* FOOTER LINKS */
+    .footer-link {
+      color: rgba(245, 240, 232, 0.4) !important;
+      text-decoration: none;
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+    .footer-link:hover { color: #C8592E !important; }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 680px) {
+      .email-container { width: 100% !important; }
+      .fluid { max-width: 100% !important; height: auto !important; }
+      .stack-column { display: block !important; width: 100% !important; }
+      .mobile-padding { padding-left: 24px !important; padding-right: 24px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background: linear-gradient(180deg, #0A1628 0%, #1B2A4A 15%, #2E1A3A 30%, #4A1A2E 45%, #C8592E 65%, #E91E63 80%, #00BFFF 100%);">
+  <!-- PREVIEW TEXT -->
+  <div style="display:none;font-size:1px;color:#0A1628;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    You can be "emerging" for 15 years. It's not a career stage. Plus Masie Love, who sews her ancestry into canvas one thread at a time.
+  </div>
+
+  <!-- EMAIL WRAPPER -->
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(180deg, #0A1628 0%, #1B2A4A 15%, #2E1A3A 30%, #4A1A2E 45%, #C8592E 65%, #E91E63 80%, #00BFFF 100%);">
+    <tr>
+      <td align="center" style="padding: 20px 10px;">
+
+        <!-- EMAIL CONTAINER -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="640" class="email-container" style="background-color: rgba(10, 22, 40, 0.85);">
+
+          <!-- ============================================ -->
+          <!-- HEADER / MASTHEAD -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0;">
+              <!-- OMBRE TOP LINE -->
+              <div class="ombre-line"></div>
+
+              <!-- HEADER CONTENT -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="padding: 40px 48px 0 48px;" class="mobile-padding">
+                    <!-- TOP BAR: ISSUE & DATE -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td>
+                          <span class="section-label" style="color: rgba(245,240,232,0.4);">ISSUE #002</span>
+                        </td>
+                        <td align="right">
+                          <span class="section-label" style="color: rgba(245,240,232,0.4);"><!-- WEEK_DATE -->MAY 2026<!-- /WEEK_DATE --></span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 40px 48px 4px 48px;" class="mobile-padding">
+                    <!-- LOGO TEXT -->
+                    <div style="font-family: 'Old Standard TT', Georgia, serif; font-size: 14px; font-weight: 400; letter-spacing: 6px; text-transform: uppercase; color: rgba(245,240,232,0.5); margin-bottom: 16px;">BERNARD STUDIA</div>
+
+                    <!-- NEWSLETTER TITLE -->
+                    <h1 style="margin: 0; font-family: 'Old Standard TT', Georgia, serif; font-size: 52px; font-weight: 400; line-height: 1.05; letter-spacing: -1px;">
+                      <span style="color: #F5F0E8;">THE BERNARD<br>BRIEF</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 0 48px 0 48px;" class="mobile-padding">
+                    <!-- TAGLINE -->
+                    <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,240,232,0.4);">
+                      CREATE &nbsp;/&nbsp; CURATE &nbsp;/&nbsp; CONNECT
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- GORILLA LOGO -->
+                <tr>
+                  <td align="center" style="padding: 0 48px 0 48px;" class="mobile-padding">
+                    <img src="https://www.bernardstudia.com/newsletter/gorilla-logo-transparent.png" alt="Bernard Studia Gorilla" width="360" height="360" style="display: block; margin: 0 auto; border: 0;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION 1: HOT TAKE -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">HOT TAKE</span>
+              </div>
+
+              <!-- HEADLINE -->
+              <h2 class="headline" style="font-size: 32px; line-height: 1.2; margin: 0 0 20px 0;">
+                <!-- HOT_TAKE_TITLE -->"Emerging" Is Not a Career Stage. It's a Pricing Strategy.<!-- /HOT_TAKE_TITLE -->
+              </h2>
+
+              <!-- BODY -->
+              <p class="body-text" style="margin: 0 0 20px 0;">
+                <!-- HOT_TAKE_BODY -->You want to know the dirtiest trick in the art world? It's a single word: <em>emerging</em>.<br><br>It sounds supportive. Like the industry is rooting for you. It's not. "Emerging" is a price tag dressed up as a compliment. It means we like your work enough to sell it, but not enough to pay you fairly for it. Your paintings go for $3K, the gallery takes $1,500, and everyone tells you to be grateful for the exposure. Collectors get to feel like visionaries buying "early" while you're subsidizing their investment thesis with your rent money.<br><br>There's no graduation date. No one sends you a letter that says "Congratulations, you've emerged." You can have ten solo shows, three residencies, a museum acquisition, and a feature in Artforum and still get introduced at a dinner as "emerging." MFA at 25. Emerging at 40. Still emerging at 52, apparently, just with better representation and worse knees.<br><br>Meanwhile "mid-career" is a ghost town nobody wants to claim, and "established" is reserved for artists who are either dead or selling for six figures. Three rungs, two of them broken.<br><br>Nobody sat in a room and decided to weaponize the word. It just became the path of least resistance for pricing, for positioning, for deciding who gets which booth. And because nobody owns the definition, nobody's responsible for what it costs the artists wearing it.<br><br>Some galleries already get this. They invest in artists for years, build their markets properly, and never use "emerging" like a leash. Those are the ones actually developing careers instead of flipping talent. You know who you are. The rest of you, stop hiding behind a word that was never meant to help anybody but yourselves.<!-- /HOT_TAKE_BODY -->
+              </p>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION 2: FEATURED ARTIST -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">FEATURED ARTIST</span>
+              </div>
+
+              <!-- ARTIST CARD -->
+              <div class="artist-card" style="padding: 32px; margin-bottom: 24px;">
+                <!-- Artist Images -->
+                <div style="width: 100%; margin-bottom: 8px;">
+                  <img src="https://www.bernardstudia.com/newsletter/issue-002/masie-love-untitled.png" alt="Masie Love - Untitled, mixed media on linen, 2022" style="width: 100%; height: auto; display: block;">
+                </div>
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 1px; color: rgba(245,240,232,0.35); margin-bottom: 20px;">
+                  <em>Untitled</em>, 2022 &nbsp;&bull;&nbsp; mixed media on linen
+                </div>
+                <!-- Artist Name -->
+                <h3 class="headline" style="font-size: 26px; margin: 0 0 4px 0;">
+                  <!-- ARTIST_NAME -->Masie Love<!-- /ARTIST_NAME -->
+                </h3>
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #C8592E; margin-bottom: 16px;">
+                  <!-- ARTIST_MEDIUM -->Mixed Media &bull; Washington, D.C. / New York<!-- /ARTIST_MEDIUM -->
+                </div>
+
+                <!-- Artist Description -->
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  Masie Love sews her paintings back together like the stories were always supposed to come apart first. Oil and thread on canvas and linen, the stitching not decorative but structural, holding the work the way oral history holds a family. Each pattern is a sentence in a language she's building from scratch, pulled from the time she spent in Goodsprings, Tennessee, from the shapes that surface when you sit with your ancestry long enough to stop romanticizing it and start listening.
+                </p>
+
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  The canvases feel inherited, even when they're new. She deconstructs them and reconstructs them, journal pages folded into the process, thread tracing paths across the surface like someone mapping a route home from memory. The "Goodsprings" series is the spine of the work so far, large-scale pieces that vibrate between abstraction and something deeply personal. You can feel Tennessee in them without ever seeing a landscape. The red clay is in the color. The front porches are in the pattern. The people who lived there are in the thread.
+                </p>
+
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  Love was born in D.C. in 2000 and is finishing her MFA in Drawing and Painting at Hunter College this spring. She's shown with the Arts Council for Long Beach and is building a practice that already has the conceptual weight most artists spend a decade chasing. At 25, she's making work that treats craft as inheritance and pattern as proof that the people who came before her had something to say. She's just figured out how to let the canvas say it for them.
+                </p>
+
+                <!-- Pull Quote -->
+                <div class="pull-quote" style="margin-bottom: 20px;">
+                  <!-- ARTIST_QUOTE -->"I see my process as a form of language; the patterns in my art are the words spoken to me by my ancestors symbolizing fragments given to me through the stories of our past." — Masie Love<!-- /ARTIST_QUOTE -->
+                </div>
+
+                <!-- Advisory CTA -->
+                <p class="body-text" style="margin: 0 0 20px 0; font-style: italic;">
+                  Curious about the work? Our advisory team can guide you. <a href="mailto:office@bernardstudia.com" style="color: #00BFFF; text-decoration: none;">office@bernardstudia.com</a>
+                </p>
+
+                <!-- Second artwork -->
+                <div style="width: 100%; margin-bottom: 8px;">
+                  <img src="https://www.bernardstudia.com/newsletter/issue-002/masie-love-goodsprings-3.png" alt="Masie Love - Goodsprings #3, oil and thread on canvas, 12 x 12 in., 2022" style="width: 100%; height: auto; display: block;">
+                </div>
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 1px; color: rgba(245,240,232,0.35); margin-bottom: 24px;">
+                  <em>Goodsprings #3</em>, 2022 &nbsp;&bull;&nbsp; oil and thread on canvas &nbsp;&bull;&nbsp; 12 x 12 in.
+                </div>
+
+                <!-- CTA -->
+                <a href="https://masielove.com" class="cta-button">
+                  <!-- ARTIST_CTA -->SEE HER WORK<!-- /ARTIST_CTA -->
+                </a>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION: POLL -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">YOUR CALL</span>
+              </div>
+
+              <h2 class="headline" style="font-size: 26px; line-height: 1.2; margin: 0 0 12px 0;">
+                Shape What Comes Next
+              </h2>
+              <p class="body-text" style="margin: 0 0 24px 0; font-size: 14px;">
+                We're building this for you. Tell us what's actually useful.
+              </p>
+
+              <!-- Poll Options -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="padding: 0 0 12px 0;">
+                    <a href="mailto:office@bernardstudia.com?subject=Poll: Artist Discovery" style="display: block; padding: 14px 20px; border: 1px solid rgba(245, 240, 232, 0.15); text-decoration: none; transition: all 0.3s ease;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; color: #F5F0E8;">Cultural signals worth watching (beyond the art world)</td>
+                          <td align="right" style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: #C8592E;">VOTE &rarr;</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 12px 0;">
+                    <a href="mailto:office@bernardstudia.com?subject=Poll: Artist Discovery" style="display: block; padding: 14px 20px; border: 1px solid rgba(245, 240, 232, 0.15); text-decoration: none; transition: all 0.3s ease;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; color: #F5F0E8;">Show me who's making work I haven't seen yet</td>
+                          <td align="right" style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: #C8592E;">VOTE &rarr;</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 12px 0;">
+                    <a href="mailto:office@bernardstudia.com?subject=Poll: Brand-Artist Deals" style="display: block; padding: 14px 20px; border: 1px solid rgba(245, 240, 232, 0.15); text-decoration: none; transition: all 0.3s ease;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; color: #F5F0E8;">Recent brand-artist partnership deals with strategic reads</td>
+                          <td align="right" style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: #C8592E;">VOTE &rarr;</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0 0 12px 0;">
+                    <a href="mailto:office@bernardstudia.com?subject=Poll: Artist Interviews" style="display: block; padding: 14px 20px; border: 1px solid rgba(245, 240, 232, 0.15); text-decoration: none; transition: all 0.3s ease;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; color: #F5F0E8;">Deeper dives: artist interviews &amp; studio visits</td>
+                          <td align="right" style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: #C8592E;">VOTE &rarr;</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0;">
+                    <a href="mailto:office@bernardstudia.com?subject=Poll: My Suggestion&body=Here's what I'd like to see in The Bernard Brief:%0A%0A" style="display: block; padding: 14px 20px; border: 1px solid rgba(245, 240, 232, 0.15); text-decoration: none; transition: all 0.3s ease;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="font-family: 'DM Sans', Helvetica, Arial, sans-serif; font-size: 14px; color: #F5F0E8;">Something else entirely &mdash; tell us</td>
+                          <td align="right" style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: #C8592E;">WRITE IN &rarr;</td>
+                        </tr>
+                      </table>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- CLOSING / CTA -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 48px 48px 48px;" class="mobile-padding">
+              <p class="body-text" style="text-align: center; margin: 0 0 24px 0; font-size: 14px;">
+                You know somebody we should know about? Got a take that'll make us angry?<br>
+                Good. Write us. This thing's a conversation, not a monologue.
+              </p>
+              <a href="mailto:office@bernardstudia.com" class="cta-button">GET IN TOUCH</a>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- FOOTER -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0;">
+              <div class="ombre-line"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px 48px; background-color: rgba(0,0,0,0.3);" class="mobile-padding">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td>
+                    <div style="font-family: 'Old Standard TT', Georgia, serif; font-size: 13px; font-weight: 400; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,240,232,0.3); margin-bottom: 16px;">BERNARD STUDIA</div>
+                    <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: rgba(245,240,232,0.25); line-height: 1.8;">
+                      CREATE &nbsp;&bull;&nbsp; CURATE &nbsp;&bull;&nbsp; CONNECT
+                    </div>
+                  </td>
+                  <td align="right" valign="top">
+                    <div style="margin-bottom: 8px;">
+                      <a href="https://bernardstudia.com" class="footer-link">WEBSITE</a>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                      <a href="mailto:office@bernardstudia.com" class="footer-link">EMAIL</a>
+                    </div>
+                    <div>
+                      <a href="#" class="footer-link">UNSUBSCRIBE</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- BOTTOM MARQUEE-STYLE SERVICE LIST -->
+              <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(245,240,232,0.06);">
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(245,240,232,0.15); text-align: center; line-height: 2;">
+                  ARTIST REPRESENTATION &nbsp;&bull;&nbsp; DIGITAL MARKETING &nbsp;&bull;&nbsp; DIGITAL STRATEGY &nbsp;&bull;&nbsp; CONSULTING
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /EMAIL CONTAINER -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /EMAIL WRAPPER -->
+</body>
+</html>
