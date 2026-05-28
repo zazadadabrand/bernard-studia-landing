@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Bernard Brief - Issue #003</title>
+  <!--[if mso]>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+  <![endif]-->
+  <style>
+    /* RESET */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; background-color: #060e1a; }
+
+    /* GOOGLE FONTS IMPORT */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+    /* TEMPLATE STYLES */
+    .email-body { background-color: #060e1a; }
+    .email-container { max-width: 640px; margin: 0 auto; background-color: #0A1628; }
+
+    /* TYPOGRAPHY */
+    .font-serif { font-family: 'Old Standard TT', 'Georgia', 'Times New Roman', serif; }
+    .font-sans { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; }
+    .font-work { font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif; }
+
+    /* OMBRE TEXT EFFECT */
+    .ombre-text {
+      background: linear-gradient(135deg, #F5F0E8 0%, #C8592E 35%, #E91E63 60%, #00BFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .ombre-line {
+      height: 3px;
+      background: rgba(245, 240, 232, 0.15);
+      border: none;
+      margin: 0;
+    }
+
+    .ombre-line-thin {
+      height: 1px;
+      background: rgba(245, 240, 232, 0.15);
+      border: none;
+      margin: 0;
+    }
+
+    /* SECTION STYLES */
+    .section-label {
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #C8592E;
+    }
+
+    .section-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: #C8592E;
+      border-radius: 50%;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .body-text {
+      font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(245, 240, 232, 0.8);
+    }
+
+    .headline {
+      font-family: 'Old Standard TT', 'Georgia', serif;
+      color: #F5F0E8;
+      font-weight: 400;
+    }
+
+    /* BUTTON */
+    .cta-button {
+      display: inline-block;
+      padding: 12px 28px;
+      border: 1px solid rgba(245, 240, 232, 0.3);
+      color: #F5F0E8 !important;
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      border-color: #C8592E;
+      color: #C8592E !important;
+    }
+
+    /* FEATURED ARTIST CARD */
+    .artist-card {
+      background: linear-gradient(135deg, #1B2A4A 0%, #0A1628 100%);
+      border: 1px solid rgba(245, 240, 232, 0.08);
+      border-radius: 2px;
+    }
+
+    /* QUOTE BLOCK */
+    .pull-quote {
+      border-left: 3px solid #C8592E;
+      padding-left: 24px;
+      font-family: 'Old Standard TT', 'Georgia', serif;
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.5;
+      color: rgba(245, 240, 232, 0.7);
+    }
+
+    /* FOOTER LINKS */
+    .footer-link {
+      color: rgba(245, 240, 232, 0.4) !important;
+      text-decoration: none;
+      font-family: 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+    .footer-link:hover { color: #C8592E !important; }
+
+    /* RESPONSIVE */
+    @media screen and (max-width: 680px) {
+      .email-container { width: 100% !important; }
+      .fluid { max-width: 100% !important; height: auto !important; }
+      .stack-column { display: block !important; width: 100% !important; }
+      .mobile-padding { padding-left: 24px !important; padding-right: 24px !important; }
+    }
+  </style>
+</head>
+<body style="margin:0; padding:0; background: linear-gradient(180deg, #0A1628 0%, #1B2A4A 15%, #2E1A3A 30%, #4A1A2E 45%, #C8592E 65%, #E91E63 80%, #00BFFF 100%);">
+  <!-- PREVIEW TEXT -->
+  <div style="display:none;font-size:1px;color:#0A1628;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">
+    Nobody outside the art world can read an artist statement without a translator. Plus Wenqing Zhai, who paints toys that aren't for children.
+  </div>
+
+  <!-- EMAIL WRAPPER -->
+  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background: linear-gradient(180deg, #0A1628 0%, #1B2A4A 15%, #2E1A3A 30%, #4A1A2E 45%, #C8592E 65%, #E91E63 80%, #00BFFF 100%);">
+    <tr>
+      <td align="center" style="padding: 20px 10px;">
+
+        <!-- EMAIL CONTAINER -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="640" class="email-container" style="background-color: rgba(10, 22, 40, 0.85);">
+
+          <!-- ============================================ -->
+          <!-- HEADER / MASTHEAD -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0;">
+              <!-- OMBRE TOP LINE -->
+              <div class="ombre-line"></div>
+
+              <!-- HEADER CONTENT -->
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="padding: 40px 48px 0 48px;" class="mobile-padding">
+                    <!-- TOP BAR: ISSUE & DATE -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <td>
+                          <span class="section-label" style="color: rgba(245,240,232,0.4);">ISSUE #003</span>
+                        </td>
+                        <td align="right">
+                          <span class="section-label" style="color: rgba(245,240,232,0.4);"><!-- WEEK_DATE -->JUNE 2026<!-- /WEEK_DATE --></span>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 40px 48px 4px 48px;" class="mobile-padding">
+                    <!-- LOGO TEXT -->
+                    <div style="font-family: 'Old Standard TT', Georgia, serif; font-size: 14px; font-weight: 400; letter-spacing: 6px; text-transform: uppercase; color: rgba(245,240,232,0.5); margin-bottom: 16px;">BERNARD STUDIA</div>
+
+                    <!-- NEWSLETTER TITLE -->
+                    <h1 style="margin: 0; font-family: 'Old Standard TT', Georgia, serif; font-size: 52px; font-weight: 400; line-height: 1.05; letter-spacing: -1px;">
+                      <span style="color: #F5F0E8;">THE BERNARD<br>BRIEF</span>
+                    </h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" style="padding: 0 48px 0 48px;" class="mobile-padding">
+                    <!-- TAGLINE -->
+                    <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,240,232,0.4);">
+                      CREATE &nbsp;/&nbsp; CURATE &nbsp;/&nbsp; CONNECT
+                    </div>
+                  </td>
+                </tr>
+
+                <!-- GORILLA LOGO -->
+                <tr>
+                  <td align="center" style="padding: 0 48px 0 48px;" class="mobile-padding">
+                    <img src="https://www.bernardstudia.com/newsletter/gorilla-logo-transparent.png" alt="Bernard Studia Gorilla" width="360" height="360" style="display: block; margin: 0 auto; border: 0;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION 1: HOT TAKE -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">HOT TAKE</span>
+              </div>
+
+              <!-- HEADLINE -->
+              <h2 class="headline" style="font-size: 32px; line-height: 1.2; margin: 0 0 20px 0;">
+                <!-- HOT_TAKE_TITLE -->The Art World Has a Language Problem<!-- /HOT_TAKE_TITLE -->
+              </h2>
+
+              <!-- BODY -->
+              <p class="body-text" style="margin: 0 0 20px 0;">
+                <!-- HOT_TAKE_BODY -->Read this and tell me what it means:<br><br><em>"My practice interrogates the liminal spaces between embodied phenomenology and post-digital materiality, foregrounding the affective resonance of quotidian objects through a lens of decolonial temporality."</em><br><br>You can't. Nobody can. That's the point.<br><br>That sentence was made up. But you believed it for a second, didn't you? Because it sounds exactly like every artist statement you've ever pretended to read at an opening while nodding slowly with a glass of natural wine in your hand.<br><br>The art world has a language problem. Not a small one. A structural one. Somewhere along the way, the industry decided that if you can't describe your work in words nobody uses in conversation, you're not serious. The jargon doesn't exist to explain the work. It exists to protect the people who've learned how to speak it.<br><br>Here are three more. See if you can tell which one is real:<br><br><em>A. "Through the recursive entanglement of fiber and void, the work situates itself at the intersection of haptic memory and architectural absence."</em><br><br><em>B. "I'm exploring the tension between systemic erasure and the body as archive, using repetition as both method and metaphor for institutional forgetting."</em><br><br><em>C. "My paintings are about my family. I use color to remember the things photographs can't hold."</em><br><br>If you felt something reading C and nothing reading A or B, that's the whole problem. A and B sound "professional." C sounds like a person. The art world rewards A and B. The audience connects with C.<br><br>The worst part is that artists know this. Most of them don't talk like their statements. They talk like normal people who are excited about what they make. Then they sit down to write the statement and suddenly they're "interrogating" things and "foregrounding" others and "situating their practice" somewhere between two words nobody has ever said out loud.<br><br>It's not their fault. They learned it in school, saw it in every application, read it in every catalog. The language reproduces itself because the system demands it. Try submitting a grant application that says "I make paintings about my family" and see how far you get.<br><br>Some artists have figured out a different way. They use humor. They use simplicity. They trust the viewer to meet the work without a decoder ring. The best work doesn't need a translator. It needs a wall and someone willing to look.<!-- /HOT_TAKE_BODY -->
+              </p>
+
+              <!-- CTA tied to hot take -->
+              <div style="border: 1px solid rgba(245, 240, 232, 0.15); padding: 20px; margin-top: 8px;">
+                <p class="body-text" style="margin: 0 0 10px 0; font-size: 14px; color: #F5F0E8; font-weight: 500;">
+                  Got a real artist statement that's worse than our fake ones?
+                </p>
+                <p class="body-text" style="margin: 0 0 14px 0; font-size: 13px; color: rgba(245,240,232,0.5);">
+                  Send us the most unreadable artist statement you've ever encountered. Real ones only. We'll feature the best (worst?) in a future issue.
+                </p>
+                <a href="mailto:office@bernardstudia.com?subject=Worst Artist Statement&body=Here's the worst artist statement I've ever read:%0A%0A" style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 2px; color: #00BFFF; text-decoration: none;">SEND IT &rarr;</a>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION 2: FEATURED ARTIST -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SECTION LABEL -->
+              <div style="margin-bottom: 24px;">
+                <span class="section-dot"></span>
+                <span class="section-label">FEATURED ARTIST</span>
+              </div>
+
+              <!-- ARTIST CARD -->
+              <div class="artist-card" style="padding: 32px; margin-bottom: 24px;">
+                <!-- Artist Images -->
+                <div style="width: 100%; margin-bottom: 8px;">
+                  <img src="https://www.bernardstudia.com/newsletter/issue-003/zhai-livestock.png" alt="Wenqing Zhai - Livestock, 2026, acrylic on canvas" style="width: 100%; height: auto; display: block;">
+                </div>
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 1px; color: rgba(245,240,232,0.35); margin-bottom: 20px;">
+                  <em>Livestock</em>, 2026 &nbsp;&bull;&nbsp; acrylic on canvas
+                </div>
+                <!-- Artist Name -->
+                <h3 class="headline" style="font-size: 26px; margin: 0 0 4px 0;">
+                  <!-- ARTIST_NAME -->Wenqing Zhai<!-- /ARTIST_NAME -->
+                </h3>
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #C8592E; margin-bottom: 16px;">
+                  <!-- ARTIST_MEDIUM -->Painter &bull; Beijing / New Haven<!-- /ARTIST_MEDIUM -->
+                </div>
+
+                <!-- Artist Description -->
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  Wenqing Zhai paints toys that aren't for children. Bright, oversized, deceptively simple objects rendered in acrylic on canvas that look like something you'd find in a playroom until you sit with them long enough to realize they're an argument about how we're trained to think before we're old enough to know it's happening.
+                </p>
+
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  She finds them at Goodwill. Plastic things, forgotten things, the kind of objects that end up in a donation bin after a kid outgrows them. Then she scales them up, alters their content, and turns them into paintings that ask a question most people never think to ask: what did this toy teach you before you knew you were learning? What did the story on the packaging tell you about who's good, who's bad, and what the truth is supposed to look like?
+                </p>
+
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  Zhai was an environmental engineer before she was a painter. She moved from Dalian, China to the US for high school, fell in love with art, and by her second year at Penn State switched her major from engineering to fine art. She calls herself a "gentle rebel," which is exactly what the work is. Nothing about it screams. Everything about it insists. The palette is playful. The compositions are clean. The critique is buried so deep in the surface that you don't feel it until you've already absorbed it.
+                </p>
+
+                <p class="body-text" style="margin: 0 0 20px 0;">
+                  She's now finishing her MFA in Painting at Yale. Hopper Prize artist. Featured in Booooooom, Cultured Magazine, shown at Eve Leibe Gallery and Moosey Art. The work has the rare quality of making you laugh and then making you uncomfortable about why you laughed.
+                </p>
+
+                <!-- Pull Quote -->
+                <div class="pull-quote" style="margin-bottom: 20px;">
+                  <!-- ARTIST_QUOTE -->"Something as seemingly harmless as a toy can shape how we internalize norms from a very early age." — Wenqing Zhai<!-- /ARTIST_QUOTE -->
+                </div>
+
+                <!-- Advisory CTA -->
+                <p class="body-text" style="margin: 0 0 20px 0; font-style: italic;">
+                  Curious about the work? Our advisory team can guide you. <a href="mailto:office@bernardstudia.com" style="color: #00BFFF; text-decoration: none;">office@bernardstudia.com</a>
+                </p>
+
+                <!-- Second artwork -->
+                <div style="width: 100%; margin-bottom: 8px;">
+                  <img src="https://www.bernardstudia.com/newsletter/issue-003/zhai-props-protagonist.png" alt="Wenqing Zhai - Props, Protagonist, the Play of Three, 2025, acrylic on canvas" style="width: 100%; height: auto; display: block;">
+                </div>
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 1px; color: rgba(245,240,232,0.35); margin-bottom: 24px;">
+                  <em>Props, Protagonist, the Play of Three</em>, 2025 &nbsp;&bull;&nbsp; acrylic on canvas
+                </div>
+
+                <!-- CTA -->
+                <a href="https://www.zhaiwenqing.com" class="cta-button">
+                  <!-- ARTIST_CTA -->SEE HER WORK<!-- /ARTIST_CTA -->
+                </a>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- SECTION: WHAT WE'RE WATCHING -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0 48px 40px 48px;" class="mobile-padding">
+              <!-- SLOW BURN HEADER IMAGE -->
+              <div style="width: 100%; margin-bottom: 24px;">
+                <img src="https://www.bernardstudia.com/newsletter/issue-003/slow-burn-header.png" alt="The Slow Burn — What We're Watching in Culture" style="width: 100%; height: auto; display: block;">
+              </div>
+
+              <!-- Item 1 -->
+              <div style="border-bottom: 1px solid rgba(245, 240, 232, 0.08); padding-bottom: 16px; margin-bottom: 16px;">
+                <p class="body-text" style="margin: 0 0 4px 0; font-size: 14px; color: #F5F0E8; font-weight: 500;">
+                  SpaceX Is About to IPO. Here's Why That Matters for Art.
+                </p>
+                <p class="body-text" style="margin: 0; font-size: 13px; color: rgba(245,240,232,0.5);">
+                  Starlink's potential public offering could create a new wave of tech liquidity, the kind that historically floods into art and alternative assets within 18 months. The last time this happened at scale, contemporary art auction prices jumped 23%. If you represent artists, start building relationships with wealth advisors now. The money is coming before the taste does.
+                </p>
+              </div>
+
+              <!-- Item 2 -->
+              <div style="border-bottom: 1px solid rgba(245, 240, 232, 0.08); padding-bottom: 16px; margin-bottom: 16px;">
+                <p class="body-text" style="margin: 0 0 4px 0; font-size: 14px; color: #F5F0E8; font-weight: 500;">
+                  TikTok Shop Is Outselling Etsy. Artists Should Be Paying Attention.
+                </p>
+                <p class="body-text" style="margin: 0; font-size: 13px; color: rgba(245,240,232,0.5);">
+                  The platform that was supposed to be for dance videos is now moving more product than the platform built for makers. Most artists still treat social media as a portfolio. The ones who figure out that it's a storefront first and a gallery second are going to eat. The old model was: post work, hope a gallery notices, wait. The new model is: sell directly, build an audience, and let the galleries come to you with leverage you didn't have before.
+                </p>
+              </div>
+
+              <!-- Item 3 -->
+              <div style="border-bottom: 1px solid rgba(245, 240, 232, 0.08); padding-bottom: 16px; margin-bottom: 16px;">
+                <p class="body-text" style="margin: 0 0 4px 0; font-size: 14px; color: #F5F0E8; font-weight: 500;">
+                  Pharrell Left Louis Vuitton. Every Artist Relationship He Built Just Reset.
+                </p>
+                <p class="body-text" style="margin: 0; font-size: 13px; color: rgba(245,240,232,0.5);">
+                  When a creative director leaves a luxury house, their artist rolodex doesn't transfer. The collaborations, the commissions, the relationships, all of it resets with the next person in the chair. New creative directors need new artists to prove they're not just continuing their predecessor's taste. If you represent artists and you're not tracking these moves, you're leaving introductions on the table.
+                </p>
+              </div>
+
+              <!-- Item 4 -->
+              <div style="padding-bottom: 0; margin-bottom: 0;">
+                <p class="body-text" style="margin: 0 0 4px 0; font-size: 14px; color: #F5F0E8; font-weight: 500;">
+                  Luxury Hospitality Is in a Building Boom. They All Need Art.
+                </p>
+                <p class="body-text" style="margin: 0; font-size: 13px; color: rgba(245,240,232,0.5);">
+                  Marriott, Hilton, and Hyatt collectively have over 500,000 rooms in their development pipeline for 2026-2028. Every new luxury and lifestyle property needs an art program. Most don't have one yet. If you're an advisor or consultant and you're not building relationships with hospitality design teams right now, you're leaving the biggest commission pipeline of the decade on the table.
+                </p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- CLOSING / CTA -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <!-- ============================================ -->
+          <!-- CLOSING / CTA -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0 48px;" class="mobile-padding">
+              <div class="ombre-line-thin" style="margin-bottom: 40px;"></div>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="padding: 0 48px 48px 48px;" class="mobile-padding">
+              <p class="body-text" style="text-align: center; margin: 0 0 24px 0; font-size: 14px;">
+                You know somebody we should know about? Got a take that'll make us angry?<br>
+                Good. Write us. This thing's a conversation, not a monologue.
+              </p>
+              <a href="mailto:office@bernardstudia.com" class="cta-button">GET IN TOUCH</a>
+            </td>
+          </tr>
+
+          <!-- ============================================ -->
+          <!-- FOOTER -->
+          <!-- ============================================ -->
+          <tr>
+            <td style="padding: 0;">
+              <div class="ombre-line"></div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 40px 48px; background-color: rgba(0,0,0,0.3);" class="mobile-padding">
+              <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td>
+                    <div style="font-family: 'Old Standard TT', Georgia, serif; font-size: 13px; font-weight: 400; letter-spacing: 4px; text-transform: uppercase; color: rgba(245,240,232,0.3); margin-bottom: 16px;">BERNARD STUDIA</div>
+                    <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 11px; letter-spacing: 1px; color: rgba(245,240,232,0.25); line-height: 1.8;">
+                      CREATE &nbsp;&bull;&nbsp; CURATE &nbsp;&bull;&nbsp; CONNECT
+                    </div>
+                  </td>
+                  <td align="right" valign="top">
+                    <div style="margin-bottom: 8px;">
+                      <a href="https://bernardstudia.com" class="footer-link">WEBSITE</a>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                      <a href="mailto:office@bernardstudia.com" class="footer-link">EMAIL</a>
+                    </div>
+                    <div>
+                      <a href="#" class="footer-link">UNSUBSCRIBE</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- BOTTOM MARQUEE-STYLE SERVICE LIST -->
+              <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(245,240,232,0.06);">
+                <div style="font-family: 'Work Sans', Helvetica, Arial, sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: rgba(245,240,232,0.15); text-align: center; line-height: 2;">
+                  ARTIST REPRESENTATION &nbsp;&bull;&nbsp; DIGITAL MARKETING &nbsp;&bull;&nbsp; DIGITAL STRATEGY &nbsp;&bull;&nbsp; CONSULTING
+                </div>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /EMAIL CONTAINER -->
+
+      </td>
+    </tr>
+  </table>
+  <!-- /EMAIL WRAPPER -->
+</body>
+</html>
